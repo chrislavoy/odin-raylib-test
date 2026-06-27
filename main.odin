@@ -6,6 +6,9 @@ main :: proc() {
     rl.InitWindow(720, 720, "odin raylib test")
     defer rl.CloseWindow()
 
+    rl.InitAudioDevice()
+    defer rl.CloseAudioDevice()
+
     for !rl.WindowShouldClose() {
         rl.BeginDrawing()
         rl.ClearBackground(rl.RAYWHITE)
