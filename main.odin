@@ -13,6 +13,7 @@ main :: proc() {
         rl.BeginDrawing()
         rl.ClearBackground(rl.RAYWHITE)
         rl.DrawFPS(10, 10)
+        rl.DrawRectangle(50,50,100,100,rl.BLACK)
         rl.EndDrawing()
     }
 }
